@@ -1,0 +1,324 @@
+body {
+  color: black;
+  background-color: #2b2c30;
+  font-family: Helvetica, Verdana, Arial, 'Liberation Sans', FreeSans, sans-serif;
+  font-size: 84%;  /* Enables font size scaling in MSIE */
+  margin: 0;
+  padding: 0;
+}
+
+
+/* # Header # */
+.superHeader {
+    text-align: center;
+    position: absolute;
+    top: 0%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 98.9%;
+    padding: 10px;
+}
+}
+
+.superHeader img { vertical-align: bottom; }
+
+.superHeader a {
+  color: white;
+  background-color: transparent;
+  font-size: 91%;
+  margin: 0;
+  padding: 0 0.5ex 0 0.25ex;
+}
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.superHeader div {
+  position: absolute;
+  top: 0.40ex;
+}
+
+.superHeader .left { left: 0.4em; }
+.superHeader .right { right: 0.4em; }
+
+.midHeader {
+    text-align: center;
+    position: absolute;
+    top: 2%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 98.9%;
+    padding: 10px;
+}
+
+.headerTitle {
+  color: black;
+  font-size: 233%;
+  font-weight: normal;
+  margin: 0 0 0 25mm;
+  padding: 0ex 0;
+}
+#headerSubTitle {
+  font-size: 50%;
+  font-style: italic;
+  margin-left: 1em;
+}
+
+.headerTitle a { color: white; }
+.headerTitle a:hover { text-decoration: none; }
+
+.subHeader {
+  display: none;
+  color: white;
+  background-color: rgb(0,51,153);
+  margin: 0;
+  padding: 1ex 1ex 1ex 1.5mm;
+}
+
+.subHeader a {
+  color: white;
+  background-color: transparent;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 0.1ex 0 0.5ex;
+}  
+
+.superHeader .highlight, .subHeader .highlight {
+  color: rgb(253,160,91);
+  background-color: transparent;
+}
+
+
+/* # Side # */
+#side-bar {
+  color: white;
+  background-color: rgb(64, 7, 7);
+  height: 2em;
+  padding: 0mm 0mm 0mm 25mm;
+  border: solid 0 black;
+  border-width: 2px 0;
+}
+
+#side-bar img { vertical-align: bottom; }
+
+#side-bar a {
+  color: white;
+  background-color: transparent;
+  font-size: 25px;
+  margin-left: 0.5em;
+  padding: 0 0.5ex 0 0.25ex;
+}
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+
+/* # Main Copy # */
+#main-copy {
+  max-width: 70em;
+  color: #def;
+  background-color: transparent;
+  text-align: justify;
+  line-height: 1.5em;
+  margin: 0em 0 0 16em;
+  padding: 0.5mm 5mm 5mm 5mm;
+}
+
+#bodyText {
+  margin: 0 0 0 15.5em;
+  padding: 2mm 5mm 2mm 5mm;
+}
+
+#main-copy p {
+  margin: 1em 1ex 1em 1ex !important; /* Need !important so troff-generated pages don't look totally squezed */
+  padding: 0;
+  font-size: 16px; 
+}
+
+
+#main-copy a {
+  color: rgb(98, 166, 232);
+  background-color: transparent;
+  font-size: 16px
+}
+
+#main-copy a:hover {
+  color:  rgb(100,135,220);
+}
+
+#main-copy h1, #main-copy h2 {
+  color: white;
+  background-color: transparent;
+  font-size: 145.5%;
+  font-weight: bold;
+  margin: 2em 0 0 0;
+  padding: 0.5ex 0 0.5ex 0.6ex;
+  border-bottom: 2px solid #73b731;
+}
+
+#main-copy h2 {
+  font-size: 115.5%;
+}
+
+#main-copy .topOfPage {
+  color: rgb(0,102,204);
+  background-color: transparent;
+  font-size: 91%;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 3ex 1ex 0 0;
+  padding: 0;
+  float: right;
+}
+
+dl {
+  margin: 1em 1ex 2em 1ex;
+  padding: 0;
+}
+
+dt {
+  font-weight: bold;
+  margin: 0 0 0 0;
+  padding: 0;
+}
+
+dd {
+  margin: 0 0 2em 2em;
+  padding: 0;
+}
+
+
+/* # Footer # */
+#footer {
+  color: white;
+  background-color: rgb(64, 7, 7);
+  padding: 1em;
+  clear: both;
+}
+
+#footer .left {
+  text-align: left;
+  line-height: 1.55em;
+  float: left;
+  clear: left;
+}
+
+#footer .right {
+  text-align: right;
+  line-height: 1.45em;
+}
+
+#footer a {
+  color: white;
+  background-color: transparent;
+}
+
+
+/* GENERAL */
+
+table {
+  border: solid 1px black;
+}
+th {
+  background-color: #abc;
+  border: solid 1px black;
+   text-align: center;
+}
+td {
+  background-color: #def;
+  border: solid 1px black;
+}
+
+hr {
+  border-width: 0px 0px 0.1em 0px;
+  border-color: black;
+}
+
+acronym, .titleTip {
+  border-bottom: 1px solid #ddd;
+  cursor: help;
+  margin: 0;
+  padding: 0 0 0.4px 0;
+}
+
+pre {
+  margin-left: 2em; 
+  font-size: 1.2em;
+}
+
+blockquote {
+  border-left: 1px solid blue;
+  font-style: italic;
+}
+
+.smallCaps {
+  font-size: 110%;
+  font-variant: small-caps;
+}
+
+.doNotDisplay { display: none; }
+
+
+.notify_errors,
+.notify_notes,
+.notify_success { padding: .8em; margin-bottom: 1em; border: 2px solid #ddd; }
+ 
+.notify_errors { background: #FBE3E4; color: #8a1f11; border-color: #FBC2C4; }
+.notify_notes { background: #FFF6BF; color: #514721; border-color: #FFD324; }
+.notify_success { background: #E6EFC2; color: #264409; border-color: #C6D880; }
+.notify_errors a { color: #8a1f11; }
+.notify_notes a { color: #514721; }
+.notify_success a { color: #264409; }
+
+
+/* # Page/Handler specific # */
+h1.dir-list-head, ul.dir-list {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+ul.sitemap-list a {
+  text-transform: capitalize;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+    text-align: center;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    background: rgba(0, 0, 0, 0.3);
+    color: #f1f1f1;
+    width: %;
+    padding: 50px;
+}
+
+.hometext {
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    right: 13%;
+    background: rgba(0, 0, 0, 0.3);
+    color: #f1f1f1;
+    width: 20%;
+    padding: 50px;
+}
+
+.homephoto {
+    text-align: center;
+    position: absolute;
+    top: 15%;
+    left: 1%;
+    background: rgba(0, 0, 0, 0.3);
+    color: #f1f1f1;
+    width: %;
+    padding: 50px;
+}
