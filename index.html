@@ -3,18 +3,41 @@
 <head>
     <title>XE</title>
   <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, handheld" title="default">
+  <link rel="stylesheet" type="text/css" href="scripts/ticker.css">
   <link rel="icon" href="/favicon/favicon.ico">
     <meta charset="UTF-8">
 <script src="scripts/jquery.min.js"></script>
+<script src="https://vincentxe.github.io/scripts/jquery.min.js"></script>
+<script src="https://vincentxe.github.io/scripts/ticker.js"></script>
 <script>
 $(document).ready(function(){
    $('#header').load("scripts/header.html");
-   $('#ticker-container').load("scripts/ticker.html");
 });
 </script>
 </head>
 <body>
-
+<div class="ticker-container">
+			<div class="ticker-caption">
+				<p>Responsive Ticker</p>
+			</div>
+			<ul>
+				<div>
+					<li><span>Ticker element 1 &ndash; <a href="#">read more</a></span></li>
+				</div>
+				<div>
+					<li><span>Ticker element 2 &ndash; <a href="#">read more</a></span></li>
+				</div>
+				<div>
+					<li><span>Ticker element 3 &ndash; <a href="#">read more</a></span></li>
+				</div>
+				<div>
+					<li><span>Ticker element 4 &ndash; <a href="#">read more</a></span></li></li>
+				</div>
+				<div>
+					<li><span>Ticker element 5 &ndash; <a href="#">read more</a></span></li></li>
+				</div>
+			</ul>
+		</div>
         
 <!-- The video -->
 <video autoplay muted loop id="myVideo">
