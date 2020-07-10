@@ -7,18 +7,26 @@
   <link rel="icon" href="/favicon/favicon.ico">
     <meta charset="UTF-8">
 <script src="scripts/jquery.min.js"></script>
-<script src="scripts/ticker.js"></script>
-
-
-<script>
-$(document).ready(function(){
-   $('#header').load("scripts/header.html");
-   $('#myWrapper').load("scripts/ticker.html");
-});
+<link href="css/ticker-style.css" rel="stylesheet" type="text/css" />
+<script src="scripts/jquery.ticker.js" type="text/javascript"></script>
+<script>$(document).ready(function(){
+   $('#header').load("scripts/header.html");});
+</script>
+<script type="text/javascript">
+    $(function () {
+        $('#js-news').ticker();
+    });
 </script>
 </head>
 <body>
-        
+
+<ul id="js-news" class="js-hidden">
+    <li class="news-item"><a href="#">This is the 1st latest news item.</a></li>
+    <li class="news-item"><a href="#">This is the 2nd latest news item.</a></li>
+    <li class="news-item"><a href="#">This is the 3rd latest news item.</a></li>
+    <li class="news-item"><a href="#">This is the 4th latest news item.</a></li>
+</ul>
+
 <!-- The video -->
 <video autoplay muted loop id="myVideo">
   <source src="golf.mp4" type="video/mp4">
@@ -36,7 +44,6 @@ $(document).ready(function(){
 <img src="" width="1005" height="60">
 <h2>More coming soon</h2>
 </div>
-
 </body>
 </html>
 
