@@ -55,7 +55,7 @@ a:hover { text-decoration: underline; }
   color: black;
   font-size: 233%;
   font-weight: normal;
-  margin: 0 0 0 25mm;
+  margin: 0 0 0 -10mm;
   padding: 0ex 0;
 }
 #headerSubTitle {
