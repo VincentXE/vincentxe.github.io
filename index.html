@@ -4,39 +4,15 @@
     <title>XE</title>
   <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, handheld" title="default">
   <link rel="icon" href="/favicon/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/ticker.css">
     <meta charset="UTF-8">
 <!-- <script src="scripts/jquery.min.js"></script> -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="scripts/jquery.easy-ticker.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
 
 <script>$(document).ready(function(){
    $('#header').load("scripts/header.html");
 });
 </script>
-<script >$(document).ready(function(){
-    
-    $('.myWrapper').easyTicker({
-        direction: 'up',
-        easing: 'swing',
-        speed: 'slow',
-        interval: 2000,
-        height: 'auto',
-        visible: 0,
-        mousePause: true,
-        controls: {
-            up: '',
-            down: '',
-            toggle: '',
-            playText: 'Play',
-            stopText: 'Stop'
-        },
-        callbacks: {
-            before: false,
-            after: false
-        }
-    });
-
-});</script>
 </head>
 <body>
         
@@ -50,14 +26,31 @@
     <h1 class="headerTitle"><a href="index.html">XE<span id="headerSubTitle"><script src="scripts/quotes.js"></script></span></a></h1>
   </div>
 
-<div class="myWrapper">
-    <ul>
-        <li>List item 1</li>
-        <li>List item 2</li>
-        <li>List item 3</li>
-        <li>List item 4</li>
-    </ul>
+<div class="ticker-container">
+  <div class="ticker-caption">
+    <p>Breaking News</p>
+  </div>
+  <ul>
+    <div>
+      <li><span>Breaking News 1 &ndash; <a href="#">read more</a></span></li>
+    </div>
+    <div>
+      <li><span>Breaking News 2 &ndash; <a href="#">read more</a></span></li>
+    </div>
+    <div>
+      <li><span>Breaking News 3 &ndash; <a href="#">read more</a></span></li>
+    </div>
+    <div>
+      <li><span>Breaking News 4 &ndash; <a href="#">read more</a></span></li>
+    </div>
+    <div>
+      <li><span>Breaking News 5 &ndash; <a href="#">read more</a></span></li>
+    </div>
+  </ul>
 </div>
+<script src="scripts/ticker.js"></script>
+
+
 <div class="homephoto">
 
 <h1>Under Construction</h1>
