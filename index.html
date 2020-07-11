@@ -7,13 +7,37 @@
     <meta charset="UTF-8">
 <!-- <script src="scripts/jquery.min.js"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="scripts/jquery.webticker.min.js"></script>
+<script src="scripts/jquery.easy-ticker.min.js"></script>
 
 <script>$(document).ready(function(){
    $('#header').load("scripts/header.html");
    $('#webTicker').webTicker(); 
 });
 </script>
+<script >$(document).ready(function(){
+    
+    $('.myWrapper').easyTicker({
+        direction: 'up',
+        easing: 'swing',
+        speed: 'slow',
+        interval: 2000,
+        height: 'auto',
+        visible: 0,
+        mousePause: true,
+        controls: {
+            up: '',
+            down: '',
+            toggle: '',
+            playText: 'Play',
+            stopText: 'Stop'
+        },
+        callbacks: {
+            before: false,
+            after: false
+        }
+    });
+
+});</script>
 </head>
 <body>
         
@@ -27,12 +51,14 @@
     <h1 class="headerTitle"><a href="index.html">XE<span id="headerSubTitle"><script src="scripts/quotes.js"></script></span></a></h1>
   </div>
 
-<ul id="webTicker">
-    <li>This List Item will scroll infintely</li>
-    <li>And this one will follow it</li>
-    <li>Finally when it goes out of screen, it will queue again at the end</li>
-</ul>
-
+<div class="myWrapper">
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+        <li>List item 4</li>
+    </ul>
+</div>
 <div class="homephoto">
 
 <h1>Under Construction</h1>
