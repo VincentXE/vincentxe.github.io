@@ -7,6 +7,8 @@
   <link rel="icon" href="/favicon/favicon.ico">
     <meta charset="UTF-8">
 <script src="scripts/jquery.min.js"></script>
+<script src="scripts/jquery.webticker.min.js"></script>
+
 <script>$(document).ready(function(){
    $('#header').load("scripts/header.html");
 });
@@ -23,7 +25,11 @@
 <div class="midHeader">
     <h1 class="headerTitle"><a href="index.html">XE<span id="headerSubTitle"><script src="scripts/quotes.js"></script></span></a></h1>
   </div>
-
+<ul id="webTicker">
+    <li>This List Item will scroll infintely</li>
+    <li>And this one will follow it</li>
+    <li>Finally when it goes out of screen, it will queue again at the end</li>
+</ul>
 
 <div class="homephoto">
 
