@@ -3,17 +3,17 @@
 <head>
     <title>XE</title>
   <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, handheld" title="default">
+  <link rel="stylesheet" href="css/ticker.css" type="text/css">
   <link rel="icon" href="/favicon/favicon.ico">
     <meta charset="UTF-8">
 <!-- <script src="scripts/jquery.min.js"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="scripts/jquery.webticker.min.js"></script>
+<script src="scripts/ticker.js"></script>
 
 
 <script>$(document).ready(function(){
    $('#header').load("scripts/header.html");
-   $('#webTicker').webTicker();
-   $('#webTicker').load("scripts/ticker.html")
+
 });
 </script>
 </head>
@@ -29,8 +29,28 @@
     <h1 class="headerTitle"><a href="index.html">XE<span id="headerSubTitle"><script src="scripts/quotes.js"></script></span></a></h1>
   </div>
 
-
-<div id="webTicker"></div>
+<div class="ticker-container">
+  <div class="ticker-caption">
+    <p>Breaking News</p>
+  </div>
+  <ul>
+    <div>
+      <li><span>Breaking News 1 &ndash; <a href="#">read more</a></span></li>
+    </div>
+    <div>
+      <li><span>Breaking News 2 &ndash; <a href="#">read more</a></span></li>
+    </div>
+    <div>
+      <li><span>Breaking News 3 &ndash; <a href="#">read more</a></span></li>
+    </div>
+    <div>
+      <li><span>Breaking News 4 &ndash; <a href="#">read more</a></span></li>
+    </div>
+    <div>
+      <li><span>Breaking News 5 &ndash; <a href="#">read more</a></span></li>
+    </div>
+  </ul>
+</div>
 
 <div class="homephoto">
 
